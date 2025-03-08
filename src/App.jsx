@@ -1,9 +1,10 @@
-import UseState from "./UseState.jsx" 
-import Counter from "./Counter.jsx"
+import UseState from "./prevExer/UseState.jsx" 
+import Counter from "./prevExer/Counter.jsx"
+import OnChange from "./OnChange.jsx"
 function App() {
   return (
     <>
-      <Counter/>
+      <OnChange/>
     </>
   )
 }
