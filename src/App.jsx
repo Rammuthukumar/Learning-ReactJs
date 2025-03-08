@@ -1,9 +1,9 @@
-import Event from "./Event.jsx" 
-
+import UseState from "./UseState.jsx" 
+import Counter from "./Counter.jsx"
 function App() {
   return (
     <>
-      <Event/>
+      <Counter/>
     </>
   )
 }
