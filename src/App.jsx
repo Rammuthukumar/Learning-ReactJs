@@ -1,10 +1,8 @@
-import UseState from "./prevExer/UseState.jsx" 
-import Counter from "./prevExer/Counter.jsx"
-import OnChange from "./OnChange.jsx"
+import ColorPicker from "./ColorPicker.jsx"
 function App() {
   return (
     <>
-      <OnChange/>
+      <ColorPicker/>
     </>
   )
 }
