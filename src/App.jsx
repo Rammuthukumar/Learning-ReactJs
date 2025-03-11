@@ -1,8 +1,9 @@
-import ColorPicker from "./ColorPicker.jsx"
+import UpdaterFunction from "./UpdaterFunction.jsx"
+
 function App() {
   return (
     <>
-      <ColorPicker/>
+      <UpdaterFunction/>
     </>
   )
 }
