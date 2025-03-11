@@ -1,9 +1,9 @@
-import UpdaterFunction from "./UpdaterFunction.jsx"
+import ToDoList from "./ToDoList.jsx"
 
 function App() {
   return (
     <>
-      <UpdaterFunction/>
+      <ToDoList/>
     </>
   )
 }
