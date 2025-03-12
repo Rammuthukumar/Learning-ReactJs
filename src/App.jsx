@@ -1,9 +1,9 @@
-import ToDoList from "./ToDoList.jsx"
+import UseEffect from './UseEffect.jsx'
 
 function App() {
   return (
     <>
-      <ToDoList/>
+      <UseEffect/>
     </>
   )
 }
