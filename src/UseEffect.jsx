@@ -10,7 +10,37 @@ import React, { useState, useEffect } from "react"
 // useEffect(()=>{},[dependenices])  // Runs on mount + when value changes
 
 function UseEffect(){
-    const [count, setCount] = useState(0);
+    const [width, setWidth] = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
+
+    useEffect(()=>{
+        window.addEventListener("resize",handleResizeChange);
+        console.log("EVENT LISTENER ADDED");
+
+        return () => {
+            window.removeEventListener("resize",handleResizeChange);
+            console.log("EVENT LISTENER REMOVED");
+        }
+    },[])
+
+    useEffect(()=>{
+        document.title = `Size ${width} X ${height}`
+    },[width, height])
+
+    function handleResizeChange(){
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
+    }
+
+    return(
+        <>
+            <p>Window width : {width}</p>
+            <p>Window height : {height}</p>
+        </>
+    )
+
+
+  /*  const [count, setCount] = useState(0);
     const [color, setColor] = useState();
 
     useEffect(()=>{
@@ -32,5 +62,6 @@ function UseEffect(){
             <button onClick={changeColor}>Change color</button>
         </div>
     )
+        */
 }
 export default UseEffect
