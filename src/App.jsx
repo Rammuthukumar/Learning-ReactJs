@@ -1,9 +1,9 @@
-import ComponentA from "./ComponentA" 
+import UseRef from "./UseRef.jsx"
 
 function App() {
   return (
     <>
-      <ComponentA/>
+      <UseRef/>
     </>
   )
 }
