@@ -1,9 +1,10 @@
-import UseRef from "./UseRef.jsx"
+import Fetch from "./Fetch";
+import React from "react";
 
 function App() {
   return (
     <>
-      <UseRef/>
+      <Fetch/>
     </>
   )
 }
